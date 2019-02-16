@@ -53,7 +53,7 @@ $ git pull
   "data": {
     "first": {
       "value": "树莓派开发板网络连接状态",
-      "color": "#333333"
+      "color": "#856404"
     },
     "keyword1": {
       "value": "发送日期",
@@ -65,7 +65,7 @@ $ git pull
     },
     "remark": {
       "value": "服务器IP地址: {ip} ({type})",
-      "color": "#333333"
+      "color": "#721c24"
     }
   }
 }
