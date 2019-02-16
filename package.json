@@ -1,0 +1,21 @@
+{
+  "name": "raspberry-ip-wechat",
+  "version": "1.0.0",
+  "description": "Server startup sends local IP to WeChat for the Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "ip",
+    "local",
+    "wechat",
+    "dynimac",
+    "raspberry"
+  ],
+  "author": "Sanonz <sanonz@126.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "userIds": ["o_bBF50Ewg8VYpIRJLYuo305d7EY"],
+  "template_id": "4YscLc2uaCnsdrEdUJ9HGAGAkdBcEQM9bUBy0gs69Hw",
+  "url": "",
+  "data": {
+    "first": {
+      "value": "树莓派开发板网络连接状态",
+      "color": "#333333"
+    },
+    "keyword1": {
+      "value": "发送日期",
+      "color": "#999999"
+    },
+    "keyword2": {
+      "value": "连接成功",
+      "color": "#28a745"
+    },
+    "remark": {
+      "value": "服务器IP地址: {ip} ({type})",
+      "color": "#333333"
+    }
+  }
+}
