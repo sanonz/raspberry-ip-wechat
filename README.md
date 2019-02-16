@@ -29,6 +29,7 @@ Git 方式安装
 $ git clone https://github.com/sanonz/raspberry-ip-wechat.git
 $ cd raspberry-ip-wechat
 $ pwd
+/home/htdocs/raspberry-ip-wechat # 记录这个路径，下边添加自启动要用到
 ```
 
 或者 [直接下载](https://github.com/sanonz/raspberry-ip-wechat/archive/master.zip) 压缩包然后解压
@@ -99,7 +100,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-node /home/htdocs/dynimac/index.js # 增加这一行，放在 `exit 0` 前边
+node /home/htdocs/raspberry-ip-wechat/index.js # 增加这一行，放在 `exit 0` 前边，路径使用上方记录的
 
 exit 0
 ```
