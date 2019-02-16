@@ -26,7 +26,7 @@ function loop(isConnected) {
 
     axios.post('http://wxmsg.dingliqc.com/send', json)
       .then(response => {
-        if (response && response.code === 200) {
+        if (response && response.data.code === 200) {
           console.log('local ip send success!');
         }
       });
