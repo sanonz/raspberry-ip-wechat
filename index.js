@@ -22,7 +22,7 @@ function loop(isConnected) {
     for(let k in data) {
       data[k].value = template(data[k].value, args);
     }
-    data.keyword1.value = getDate();
+    data.keyword1.value = getTime();
 
     axios.post('http://wxmsg.dingliqc.com/send', json)
       .then(response => {
@@ -49,11 +49,9 @@ function getNetworkStatus(cb) {
   });
 }
 
-function getDate() {
+function getTime() {
   const d = new Date();
   const f = str => str > 10 ? str : '0' + str;
-  const dt = [d.getFullYear(), f(d.getMonth()), f(d.getDate())];
-  const tm = [f(d.getHours()), f(d.getMinutes())];
 
-  return [dt.join('-'), tm.join(':')].join(' ');
+  return [f(d.getHours()), f(d.getMinutes()), f(d.getSeconds())].join(':');
 }
